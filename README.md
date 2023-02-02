@@ -1,4 +1,4 @@
-# autocomplete
+# Autocomplete
 
 Use a Binary Search Tree to store key-value pairs where the values represent the frequency of keys (cities, words, movie names, etc)
 
