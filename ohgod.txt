@@ -1,0 +1,2021 @@
+Mon Jan 25 23:17:55 PST 2021
+Linux csslab7.uwb.edu 3.10.0-1160.11.1.el7.x86_64 #1 SMP Fri Dec 18 16:34:56 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+uid=1091439(dhimitri) gid=2121091439(dhimitri) groups=2121091439(dhimitri),605559(lab-access)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+In file included from autocomplete.cpp:1:
+autocomplete.h:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.h:16:10: error: field ‘phrases’ has incomplete type ‘BSTMap’
+   16 |   BSTMap phrases;
+      |          ^~~~~~~
+In file included from autocomplete.h:4,
+                 from autocomplete.cpp:1:
+bstmap.h:22:7: note: forward declaration of ‘class BSTMap’
+   22 | class BSTMap {
+      |       ^~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/utility:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:60,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_relops.h:67:1: error: expected unqualified-id before ‘namespace’
+   67 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:60,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/utility:78:1: error: expected unqualified-id before ‘namespace’
+   78 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:60,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/algorithmfwd.h:42:1: error: expected unqualified-id before ‘namespace’
+   42 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:62,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_tempbuf.h:62:1: error: expected unqualified-id before ‘namespace’
+   62 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/uniform_int_dist.h:35,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:66,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/limits:158:1: error: expected unqualified-id before ‘namespace’
+  158 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:66,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/uniform_int_dist.h:37:1: error: expected unqualified-id before ‘namespace’
+   37 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:71:1: error: expected unqualified-id before ‘namespace’
+   71 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:40,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/codecvt.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:40,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++io.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:44:1: error: expected unqualified-id before ‘namespace’
+   44 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:47:1: error: expected unqualified-id before ‘namespace’
+   47 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:1293,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/fstream.tcc:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+autocomplete.cpp:5:7: error: expected nested-name-specifier before ‘namespace’
+    5 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.cpp:9:51: error: cannot define member function ‘BSTMap::Autocomplete::readFile’ within ‘BSTMap’
+    9 | void Autocomplete::readFile(const string &fileName) {
+      |                                                   ^
+autocomplete.cpp:27:77: error: cannot define member function ‘BSTMap::Autocomplete::sortByWeight’ within ‘BSTMap’
+   27 | bool Autocomplete::sortByWeight(BSTMap::value_type &a, BSTMap::value_type &b) {
+      |                                                                             ^
+autocomplete.cpp:32:56: error: cannot define member function ‘BSTMap::Autocomplete::complete’ within ‘BSTMap’
+   32 | Autocomplete::complete(const BSTMap::key_type &prefix) const {
+      |                                                        ^~~~~
+autocomplete.cpp:37:1: error: expected ‘}’ at end of input
+   37 | }
+      | ^
+In file included from autocomplete.h:4,
+                 from autocomplete.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+bstmap.h:160:18: error: expected unqualified-id at end of input
+  160 |   int treeSize = 0;
+      |                  ^
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from bstmap.cpp:8:
+/usr/include/assert.h:65:1: error: expected unqualified-id before string constant
+   65 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+bstmap.cpp:11:7: error: expected nested-name-specifier before ‘namespace’
+   11 | using namespace std;
+      |       ^~~~~~~~~
+bstmap.cpp:14:6: error: extra qualification ‘BSTMap::’ on member ‘copyHelper’ [-fpermissive]
+   14 | void BSTMap::copyHelper(Node *n, const Node *nOriginal) {
+      |      ^~~~~~
+bstmap.cpp:14:6: error: ‘void BSTMap::copyHelper(BSTMap::Node*, const Node*)’ cannot be overloaded with ‘void BSTMap::copyHelper(BSTMap::Node*, const Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:148:8: note: previous declaration ‘void BSTMap::copyHelper(BSTMap::Node*, const Node*)’
+  148 |   void copyHelper(Node *n, const Node *nOriginal);
+      |        ^~~~~~~~~~
+bstmap.cpp:30:1: error: extra qualification ‘BSTMap::’ on member ‘BSTMap’ [-fpermissive]
+   30 | BSTMap::BSTMap(const BSTMap &bst) {
+      | ^~~~~~
+bstmap.cpp:30:1: error: ‘BSTMap::BSTMap(const BSTMap&)’ cannot be overloaded with ‘BSTMap::BSTMap(const BSTMap&)’
+In file included from bstmap.cpp:8:
+bstmap.h:37:3: note: previous declaration ‘BSTMap::BSTMap(const BSTMap&)’
+   37 |   BSTMap(const BSTMap &bst);
+      |   ^~~~~~
+bstmap.cpp:47:16: error: extra qualification ‘BSTMap::’ on member ‘insert’ [-fpermissive]
+   47 | BSTMap::Node *&BSTMap::insert(value_type l, Node *n) {
+      |                ^~~~~~
+bstmap.cpp:47:16: error: ‘BSTMap::Node*& BSTMap::insert(BSTMap::value_type, BSTMap::Node*)’ cannot be overloaded with ‘BSTMap::Node*& BSTMap::insert(BSTMap::value_type, BSTMap::Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:151:10: note: previous declaration ‘BSTMap::Node*& BSTMap::insert(BSTMap::value_type, BSTMap::Node*)’
+  151 |   Node *&insert(value_type l , Node *n);
+      |          ^~~~~~
+bstmap.cpp:84:1: error: extra qualification ‘BSTMap::’ on member ‘BSTMap’ [-fpermissive]
+   84 | BSTMap::BSTMap(const vector<value_type> &v) {
+      | ^~~~~~
+bstmap.cpp:84:1: error: ‘BSTMap::BSTMap(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’ cannot be overloaded with ‘BSTMap::BSTMap(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+In file included from bstmap.cpp:8:
+bstmap.h:42:12: note: previous declaration ‘BSTMap::BSTMap(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+   42 |   explicit BSTMap(const vector<value_type> &v);
+      |            ^~~~~~
+bstmap.cpp:91:6: error: extra qualification ‘BSTMap::’ on member ‘insertVector’ [-fpermissive]
+   91 | void BSTMap::insertVector(const vector<value_type> &v) {
+      |      ^~~~~~
+bstmap.cpp:91:6: error: ‘void BSTMap::insertVector(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’ cannot be overloaded with ‘void BSTMap::insertVector(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+In file included from bstmap.cpp:8:
+bstmap.h:108:8: note: previous declaration ‘void BSTMap::insertVector(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+  108 |   void insertVector(const vector<value_type> &v);
+      |        ^~~~~~~~~~~~
+bstmap.cpp:98:6: error: extra qualification ‘BSTMap::’ on member ‘deleteHelper’ [-fpermissive]
+   98 | void BSTMap::deleteHelper(Node *n) {
+      |      ^~~~~~
+bstmap.cpp:98:6: error: ‘void BSTMap::deleteHelper(BSTMap::Node*)’ cannot be overloaded with ‘void BSTMap::deleteHelper(BSTMap::Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:157:8: note: previous declaration ‘void BSTMap::deleteHelper(BSTMap::Node*)’
+  157 |   void deleteHelper(Node *n);
+      |        ^~~~~~~~~~~~
+bstmap.cpp:112:1: error: extra qualification ‘BSTMap::’ on member ‘BSTMap’ [-fpermissive]
+  112 | BSTMap::~BSTMap() {
+      | ^~~~~~
+bstmap.cpp:112:1: error: ‘BSTMap::~BSTMap()’ cannot be overloaded with ‘virtual BSTMap::~BSTMap()’
+In file included from bstmap.cpp:8:
+bstmap.h:45:11: note: previous declaration ‘virtual BSTMap::~BSTMap()’
+   45 |   virtual ~BSTMap();
+      |           ^
+bstmap.cpp:119:6: error: extra qualification ‘BSTMap::’ on member ‘clear’ [-fpermissive]
+  119 | void BSTMap::clear() {
+      |      ^~~~~~
+bstmap.cpp:127:6: error: extra qualification ‘BSTMap::’ on member ‘empty’ [-fpermissive]
+  127 | bool BSTMap::empty() const { return this->root == nullptr; }
+      |      ^~~~~~
+bstmap.cpp:127:6: error: ‘bool BSTMap::empty() const’ cannot be overloaded with ‘bool BSTMap::empty() const’
+In file included from bstmap.cpp:8:
+bstmap.h:57:8: note: previous declaration ‘bool BSTMap::empty() const’
+   57 |   bool empty() const;
+      |        ^~~~~
+bstmap.cpp:130:5: error: extra qualification ‘BSTMap::’ on member ‘size’ [-fpermissive]
+  130 | int BSTMap::size() const { return treeSize; }
+      |     ^~~~~~
+bstmap.cpp:130:5: error: ‘int BSTMap::size() const’ cannot be overloaded with ‘int BSTMap::size() const’
+In file included from bstmap.cpp:8:
+bstmap.h:60:7: note: previous declaration ‘int BSTMap::size() const’
+   60 |   int size() const;
+      |       ^~~~
+bstmap.cpp:133:6: error: extra qualification ‘BSTMap::’ on member ‘finderHelper’ [-fpermissive]
+  133 | void BSTMap::finderHelper(Node *n, const key_type &k, Node *&ret) const {
+      |      ^~~~~~
+bstmap.cpp:133:6: error: ‘void BSTMap::finderHelper(BSTMap::Node*, const key_type&, BSTMap::Node*&) const’ cannot be overloaded with ‘void BSTMap::finderHelper(BSTMap::Node*, const key_type&, BSTMap::Node*&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:172:8: note: previous declaration ‘void BSTMap::finderHelper(BSTMap::Node*, const key_type&, BSTMap::Node*&) const’
+  172 |   void finderHelper(Node *n, const key_type &k, Node *&ret) const;
+      |        ^~~~~~~~~~~~
+bstmap.cpp:145:6: error: extra qualification ‘BSTMap::’ on member ‘contains’ [-fpermissive]
+  145 | bool BSTMap::contains(const key_type &key) const {
+      |      ^~~~~~
+bstmap.cpp:145:6: error: ‘bool BSTMap::contains(const key_type&) const’ cannot be overloaded with ‘bool BSTMap::contains(const key_type&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:70:8: note: previous declaration ‘bool BSTMap::contains(const key_type&) const’
+   70 |   bool contains(const key_type &key) const;
+      |        ^~~~~~~~
+bstmap.cpp:154:22: error: extra qualification ‘BSTMap::’ on member ‘operator[]’ [-fpermissive]
+  154 | BSTMap::mapped_type &BSTMap::operator[](const key_type &k) {
+      |                      ^~~~~~
+bstmap.cpp:154:22: error: ‘BSTMap::mapped_type& BSTMap::operator[](const key_type&)’ cannot be overloaded with ‘BSTMap::mapped_type& BSTMap::operator[](const key_type&)’
+In file included from bstmap.cpp:8:
+bstmap.h:79:16: note: previous declaration ‘BSTMap::mapped_type& BSTMap::operator[](const key_type&)’
+   79 |   mapped_type &operator[](const key_type &k);
+      |                ^~~~~~~~
+bstmap.cpp:168:29: error: extra qualification ‘BSTMap::’ on member ‘getHelper’ [-fpermissive]
+  168 | vector<BSTMap::value_type> &BSTMap::getHelper(Node *n, const key_type &k,
+      |                             ^~~~~~
+bstmap.cpp:168:29: error: ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >& BSTMap::getHelper(BSTMap::Node*, const key_type&, std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&) const’ cannot be overloaded with ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >& BSTMap::getHelper(BSTMap::Node*, const key_type&, std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:166:23: note: previous declaration ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >& BSTMap::getHelper(BSTMap::Node*, const key_type&, std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&) const’
+  166 |   vector<value_type> &getHelper(Node *n, const key_type &k, vector<value_type> &v) const;
+      |                       ^~~~~~~~~
+bstmap.cpp:182:28: error: extra qualification ‘BSTMap::’ on member ‘getAll’ [-fpermissive]
+  182 | vector<BSTMap::value_type> BSTMap::getAll(const key_type &k) const {
+      |                            ^~~~~~
+bstmap.cpp:182:28: error: ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> > BSTMap::getAll(const key_type&) const’ cannot be overloaded with ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> > BSTMap::getAll(const key_type&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:98:22: note: previous declaration ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> > BSTMap::getAll(const key_type&) const’
+   98 |   vector<value_type> getAll(const key_type &k) const;
+      |                      ^~~~~~
+bstmap.cpp:189:6: error: extra qualification ‘BSTMap::’ on member ‘maxHeightHelper’ [-fpermissive]
+  189 | void BSTMap::maxHeightHelper(int &largest, int current, const Node *n) {
+      |      ^~~~~~
+bstmap.cpp:189:6: error: ‘void BSTMap::maxHeightHelper(int&, int, const Node*)’ cannot be overloaded with ‘static void BSTMap::maxHeightHelper(int&, int, const Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:169:15: note: previous declaration ‘static void BSTMap::maxHeightHelper(int&, int, const Node*)’
+  169 |   static void maxHeightHelper(int &largest, int current, const Node *n);
+      |               ^~~~~~~~~~~~~~~
+bstmap.cpp:201:5: error: extra qualification ‘BSTMap::’ on member ‘height’ [-fpermissive]
+  201 | int BSTMap::height() const {
+      |     ^~~~~~
+bstmap.cpp:201:5: error: ‘int BSTMap::height() const’ cannot be overloaded with ‘int BSTMap::height() const’
+In file included from bstmap.cpp:8:
+bstmap.h:64:7: note: previous declaration ‘int BSTMap::height() const’
+   64 |   int height() const;
+      |       ^~~~~~
+bstmap.cpp:209:5: error: extra qualification ‘BSTMap::’ on member ‘getHeight’ [-fpermissive]
+  209 | int BSTMap::getHeight(const Node *n) {
+      |     ^~~~~~
+bstmap.cpp:209:5: error: ‘int BSTMap::getHeight(const Node*)’ cannot be overloaded with ‘static int BSTMap::getHeight(const Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:145:14: note: previous declaration ‘static int BSTMap::getHeight(const Node*)’
+  145 |   static int getHeight(const Node *n);
+      |              ^~~~~~~~~
+bstmap.cpp:217:8: error: extra qualification ‘BSTMap::’ on member ‘count’ [-fpermissive]
+  217 | size_t BSTMap::count(const string &k) const {
+      |        ^~~~~~
+bstmap.cpp:217:8: error: ‘size_t BSTMap::count(const string&) const’ cannot be overloaded with ‘size_t BSTMap::count(const key_type&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:74:10: note: previous declaration ‘size_t BSTMap::count(const key_type&) const’
+   74 |   size_t count(const key_type &k) const;
+      |          ^~~~~
+bstmap.cpp:224:6: error: extra qualification ‘BSTMap::’ on member ‘inorderHelper’ [-fpermissive]
+  224 | void BSTMap::inorderHelper(void visit(const value_type &item), Node *n) const {
+      |      ^~~~~~
+bstmap.cpp:224:6: error: ‘void BSTMap::inorderHelper(void (*)(const value_type&), BSTMap::Node*) const’ cannot be overloaded with ‘void BSTMap::inorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:175:8: note: previous declaration ‘void BSTMap::inorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+  175 |   void inorderHelper(void visit(const value_type &item), Node *n) const;
+      |        ^~~~~~~~~~~~~
+bstmap.cpp:234:6: error: extra qualification ‘BSTMap::’ on member ‘inorder’ [-fpermissive]
+  234 | void BSTMap::inorder(void visit(const value_type &item)) const {
+      |      ^~~~~~
+bstmap.cpp:234:6: error: ‘void BSTMap::inorder(void (*)(const value_type&)) const’ cannot be overloaded with ‘void BSTMap::inorder(void (*)(const value_type&)) const’
+In file included from bstmap.cpp:8:
+bstmap.h:83:8: note: previous declaration ‘void BSTMap::inorder(void (*)(const value_type&)) const’
+   83 |   void inorder(void visit(const value_type &item)) const;
+      |        ^~~~~~~
+bstmap.cpp:238:6: error: extra qualification ‘BSTMap::’ on member ‘preorderHelper’ [-fpermissive]
+  238 | void BSTMap::preorderHelper(void visit(const value_type &item), Node *n) const {
+      |      ^~~~~~
+bstmap.cpp:238:6: error: ‘void BSTMap::preorderHelper(void (*)(const value_type&), BSTMap::Node*) const’ cannot be overloaded with ‘void BSTMap::preorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:178:8: note: previous declaration ‘void BSTMap::preorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+  178 |   void preorderHelper(void visit(const value_type &item), Node *n) const;
+      |        ^~~~~~~~~~~~~~
+bstmap.cpp:247:6: error: extra qualification ‘BSTMap::’ on member ‘preorder’ [-fpermissive]
+  247 | void BSTMap::preorder(void visit(const value_type &item)) const {
+      |      ^~~~~~
+bstmap.cpp:247:6: error: ‘void BSTMap::preorder(void (*)(const value_type&)) const’ cannot be overloaded with ‘void BSTMap::preorder(void (*)(const value_type&)) const’
+In file included from bstmap.cpp:8:
+bstmap.h:86:8: note: previous declaration ‘void BSTMap::preorder(void (*)(const value_type&)) const’
+   86 |   void preorder(void visit(const value_type &item)) const;
+      |        ^~~~~~~~
+bstmap.cpp:251:6: error: extra qualification ‘BSTMap::’ on member ‘postorderHelper’ [-fpermissive]
+  251 | void BSTMap::postorderHelper(void visit(const value_type &item),
+      |      ^~~~~~
+bstmap.cpp:251:6: error: ‘void BSTMap::postorderHelper(void (*)(const value_type&), BSTMap::Node*) const’ cannot be overloaded with ‘void BSTMap::postorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:181:8: note: previous declaration ‘void BSTMap::postorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+  181 |   void postorderHelper(void visit(const value_type &item), Node *n) const;
+      |        ^~~~~~~~~~~~~~~
+bstmap.cpp:261:6: error: extra qualification ‘BSTMap::’ on member ‘postorder’ [-fpermissive]
+  261 | void BSTMap::postorder(void visit(const value_type &item)) const {
+      |      ^~~~~~
+bstmap.cpp:261:6: error: ‘void BSTMap::postorder(void (*)(const value_type&)) const’ cannot be overloaded with ‘void BSTMap::postorder(void (*)(const value_type&)) const’
+In file included from bstmap.cpp:8:
+bstmap.h:89:8: note: previous declaration ‘void BSTMap::postorder(void (*)(const value_type&)) const’
+   89 |   void postorder(void visit(const value_type &item)) const;
+      |        ^~~~~~~~~
+bstmap.cpp:268:6: error: extra qualification ‘BSTMap::’ on member ‘rebalanceHelper’ [-fpermissive]
+  268 | void BSTMap::rebalanceHelper(vector<value_type> &v, int low, int high) {
+      |      ^~~~~~
+bstmap.cpp:268:6: error: ‘void BSTMap::rebalanceHelper(std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&, int, int)’ cannot be overloaded with ‘void BSTMap::rebalanceHelper(std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&, int, int)’
+In file included from bstmap.cpp:8:
+bstmap.h:154:8: note: previous declaration ‘void BSTMap::rebalanceHelper(std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&, int, int)’
+  154 |   void rebalanceHelper(vector<value_type> &v, int low, int high);
+      |        ^~~~~~~~~~~~~~~
+bstmap.cpp:280:6: error: extra qualification ‘BSTMap::’ on member ‘rebalance’ [-fpermissive]
+  280 | void BSTMap::rebalance() {
+      |      ^~~~~~
+bstmap.cpp:280:6: error: ‘void BSTMap::rebalance()’ cannot be overloaded with ‘void BSTMap::rebalance()’
+In file included from bstmap.cpp:8:
+bstmap.h:93:8: note: previous declaration ‘void BSTMap::rebalance()’
+   93 |   void rebalance();
+      |        ^~~~~~~~~
+bstmap.cpp:287:6: error: extra qualification ‘BSTMap::’ on member ‘isEqual’ [-fpermissive]
+  287 | bool BSTMap::isEqual(Node *thisN, Node *otherN) const {
+      |      ^~~~~~
+bstmap.cpp:287:6: error: ‘bool BSTMap::isEqual(BSTMap::Node*, BSTMap::Node*) const’ cannot be overloaded with ‘bool BSTMap::isEqual(BSTMap::Node*, BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:163:8: note: previous declaration ‘bool BSTMap::isEqual(BSTMap::Node*, BSTMap::Node*) const’
+  163 |   bool isEqual(Node *thisN, Node *otherN) const;
+      |        ^~~~~~~
+bstmap.cpp:304:6: error: extra qualification ‘BSTMap::’ on member ‘operator==’ [-fpermissive]
+  304 | bool BSTMap::operator==(const BSTMap &other) const {
+      |      ^~~~~~
+bstmap.cpp:304:6: error: ‘bool BSTMap::operator==(const BSTMap&) const’ cannot be overloaded with ‘bool BSTMap::operator==(const BSTMap&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:102:8: note: previous declaration ‘bool BSTMap::operator==(const BSTMap&) const’
+  102 |   bool operator==(const BSTMap &other) const;
+      |        ^~~~~~~~
+bstmap.cpp:309:6: error: extra qualification ‘BSTMap::’ on member ‘operator!=’ [-fpermissive]
+  309 | bool BSTMap::operator!=(const BSTMap &other) const {
+      |      ^~~~~~
+bstmap.cpp:309:6: error: ‘bool BSTMap::operator!=(const BSTMap&) const’ cannot be overloaded with ‘bool BSTMap::operator!=(const BSTMap&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:105:8: note: previous declaration ‘bool BSTMap::operator!=(const BSTMap&) const’
+  105 |   bool operator!=(const BSTMap &other) const;
+      |        ^~~~~~~~
+bstmap.cpp:311:1: error: expected ‘}’ at end of input
+  311 | }
+      | ^
+In file included from bstmap.cpp:8:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+bstmap.cpp:311:1: error: expected unqualified-id at end of input
+  311 | }
+      | ^
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from bstmapprinter.cpp:1:
+/usr/include/math.h:29:1: error: expected unqualified-id before string constant
+   29 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from bstmapprinter.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/cmath:77:8: error: expected unqualified-id before string constant
+   77 | extern "C++"
+      |        ^~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/ctime:58:1: error: expected unqualified-id before ‘namespace’
+   58 | namespace std
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:346,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/time_members.h:37:1: error: expected unqualified-id before ‘namespace’
+   37 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:348:1: error: expected unqualified-id before ‘namespace’
+  348 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from bstmapprinter.cpp:1:
+/usr/include/libintl.h:34:1: error: expected unqualified-id before string constant
+   34 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:2010,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/messages_members.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:2013,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/codecvt.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:2015,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.tcc:35:1: error: expected unqualified-id before ‘namespace’
+   35 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/utility:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:36,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_relops.h:67:1: error: expected unqualified-id before ‘namespace’
+   67 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:36,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/utility:78:1: error: expected unqualified-id before ‘namespace’
+   78 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:37,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:342:1: error: expected unqualified-id before ‘namespace’
+  342 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:37,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/invoke.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:37,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:49:1: error: expected unqualified-id before ‘namespace’
+   49 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from bstmapprinter.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/sstream:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/sstream:879,
+                 from bstmapprinter.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/sstream.tcc:39:1: error: expected unqualified-id before ‘namespace’
+   39 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+bstmapprinter.cpp:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+bstmapprinter.cpp:9:10: error: ‘std::ostream& BSTMap::operator<<(std::ostream&, const BSTMap::Node&)’ must have exactly one argument
+    9 | ostream &operator<<(ostream &out, const BSTMap::Node &n) {
+      |          ^~~~~~~~
+bstmapprinter.cpp:16:10: error: ‘std::ostream& BSTMap::operator<<(std::ostream&, const BSTMap&)’ must have exactly one argument
+   16 | ostream &operator<<(ostream &out, const BSTMap &bst) {
+      |          ^~~~~~~~
+bstmapprinter.cpp:33:10: error: extra qualification ‘BSTMap::’ on member ‘printSideways’ [-fpermissive]
+   33 | ostream &BSTMap::printSideways(ostream &out, const Node *curr, int level) {
+      |          ^~~~~~
+bstmapprinter.cpp:33:10: error: ‘std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’ cannot be overloaded with ‘static std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:130:19: note: previous declaration ‘static std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’
+  130 |   static ostream &printSideways(ostream &out, const Node *curr, int level = 0);
+      |                   ^~~~~~~~~~~~~
+bstmapprinter.cpp:47:10: error: extra qualification ‘BSTMap::’ on member ‘centeredPrint’ [-fpermissive]
+   47 | ostream &BSTMap::centeredPrint(ostream &out, int space, const string &str,
+      |          ^~~~~~
+bstmapprinter.cpp:47:10: error: ‘std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’ cannot be overloaded with ‘static std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:133:19: note: previous declaration ‘static std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’
+  133 |   static ostream &centeredPrint(ostream &out, int space, const string &str,
+      |                   ^~~~~~~~~~~~~
+bstmapprinter.cpp:68:10: error: extra qualification ‘BSTMap::’ on member ‘printTreeLevel’ [-fpermissive]
+   68 | ostream &BSTMap::printTreeLevel(ostream &out, queue<const Node *> &q, int width,
+      |          ^~~~~~
+bstmapprinter.cpp:68:10: error: ‘std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’ cannot be overloaded with ‘static std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:137:19: note: previous declaration ‘static std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’
+  137 |   static ostream &printTreeLevel(ostream &out, queue<const Node *> &q,
+      |                   ^~~~~~~~~~~~~~
+bstmapprinter.cpp:105:10: error: extra qualification ‘BSTMap::’ on member ‘printVertical’ [-fpermissive]
+  105 | ostream &BSTMap::printVertical(ostream &out, Node *curr) {
+      |          ^~~~~~
+bstmapprinter.cpp:105:10: error: ‘std::ostream& BSTMap::printVertical(std::ostream&, BSTMap::Node*)’ cannot be overloaded with ‘static std::ostream& BSTMap::printVertical(std::ostream&, BSTMap::Node*)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:141:19: note: previous declaration ‘static std::ostream& BSTMap::printVertical(std::ostream&, BSTMap::Node*)’
+  141 |   static ostream &printVertical(ostream &out, Node *curr);
+      |                   ^~~~~~~~~~~~~
+bstmapprinter.cpp:118:1: error: expected ‘}’ at end of input
+  118 | }
+      | ^
+In file included from bstmapprinter.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+bstmapprinter.cpp: In member function ‘std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’:
+bstmapprinter.cpp:40:10: error: ‘setfill’ was not declared in this scope
+   40 |   out << setfill(space) << setw(level * readabilitySpaces) << space;
+      |          ^~~~~~~
+bstmapprinter.cpp:40:28: error: ‘setw’ was not declared in this scope; did you mean ‘getw’?
+   40 |   out << setfill(space) << setw(level * readabilitySpaces) << space;
+      |                            ^~~~
+      |                            getw
+bstmapprinter.cpp: In member function ‘std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’:
+bstmapprinter.cpp:52:12: error: ‘setfill’ was not declared in this scope
+   52 |     out << setfill(fillChar) << setw(extra + strL) << str;
+      |            ^~~~~~~
+bstmapprinter.cpp:52:33: error: ‘setw’ was not declared in this scope; did you mean ‘getw’?
+   52 |     out << setfill(fillChar) << setw(extra + strL) << str;
+      |                                 ^~~~
+      |                                 getw
+bstmapprinter.cpp:55:12: error: ‘setfill’ was not declared in this scope
+   55 |     out << setfill(fillChar) << setw(space) << str;
+      |            ^~~~~~~
+bstmapprinter.cpp:55:33: error: ‘setw’ was not declared in this scope; did you mean ‘getw’?
+   55 |     out << setfill(fillChar) << setw(space) << str;
+      |                                 ^~~~
+      |                                 getw
+bstmapprinter.cpp: In member function ‘std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’:
+bstmapprinter.cpp:73:31: error: ‘pow’ was not declared in this scope
+   73 |   int maxN = static_cast<int>(pow(2, depth - 1));
+      |                               ^~~
+bstmapprinter.cpp:83:20: error: aggregate ‘std::stringstream ss’ has incomplete type and cannot be defined
+   83 |       stringstream ss;
+      |                    ^~
+bstmapprinter.cpp: At global scope:
+bstmapprinter.cpp:118:1: error: expected unqualified-id at end of input
+  118 | }
+      | ^
+In file included from main.cpp:1:
+autocomplete.h:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.h:16:10: error: field ‘phrases’ has incomplete type ‘BSTMap’
+   16 |   BSTMap phrases;
+      |          ^~~~~~~
+In file included from autocomplete.h:4,
+                 from main.cpp:1:
+bstmap.h:22:7: note: forward declaration of ‘class BSTMap’
+   22 | class BSTMap {
+      |       ^~~~~~
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from autocomplete.h:4,
+                 from main.cpp:1:
+/usr/include/assert.h:65:1: error: expected unqualified-id before string constant
+   65 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:40,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/codecvt.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:40,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++io.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:44:1: error: expected unqualified-id before ‘namespace’
+   44 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:47:1: error: expected unqualified-id before ‘namespace’
+   47 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:1293,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/fstream.tcc:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_tree.h:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:60,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/ext/aligned_buffer.h:40:1: error: expected unqualified-id before ‘namespace’
+   40 | namespace __gnu_cxx
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:60,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_tree.h:75:1: error: expected unqualified-id before ‘namespace’
+   75 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/utility:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:38,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_relops.h:67:1: error: expected unqualified-id before ‘namespace’
+   67 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:38,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/utility:78:1: error: expected unqualified-id before ‘namespace’
+   78 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:342:1: error: expected unqualified-id before ‘namespace’
+  342 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/invoke.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:66:1: error: expected unqualified-id before ‘namespace’
+   66 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:62,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_multimap.h:64:1: error: expected unqualified-id before ‘namespace’
+   64 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+main.cpp:8:7: error: expected nested-name-specifier before ‘namespace’
+    8 | using namespace std;
+      |       ^~~~~~~~~
+main.cpp:31:1: error: expected ‘}’ at end of input
+   31 | }
+      | ^
+In file included from autocomplete.h:4,
+                 from main.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+main.cpp:31:1: error: expected unqualified-id at end of input
+   31 | }
+      | ^
+In file included from testac.cpp:1:
+autocomplete.h:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.h:16:10: error: field ‘phrases’ has incomplete type ‘BSTMap’
+   16 |   BSTMap phrases;
+      |          ^~~~~~~
+In file included from autocomplete.h:4,
+                 from testac.cpp:1:
+bstmap.h:22:7: note: forward declaration of ‘class BSTMap’
+   22 | class BSTMap {
+      |       ^~~~~~
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from autocomplete.h:4,
+                 from testac.cpp:1:
+/usr/include/assert.h:65:1: error: expected unqualified-id before string constant
+   65 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+testac.cpp:7:7: error: expected nested-name-specifier before ‘namespace’
+    7 | using namespace std;
+      |       ^~~~~~~~~
+testac.cpp:42:1: error: expected ‘}’ at end of input
+   42 | }
+      | ^
+In file included from autocomplete.h:4,
+                 from testac.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/cassert:44,
+                 from testac.cpp:2:
+testac.cpp: In member function ‘void BSTMap::testAC01()’:
+testac.cpp:15:3: error: ‘__assert_fail’ was not declared in this scope
+   15 |   assert(v.size() == 2);
+      |   ^~~~~~
+testac.cpp: In member function ‘void BSTMap::testAC02()’:
+testac.cpp:29:3: error: ‘__assert_fail’ was not declared in this scope
+   29 |   assert(v.size() == 47);
+      |   ^~~~~~
+testac.cpp: At global scope:
+testac.cpp:42:1: error: expected unqualified-id at end of input
+   42 | }
+      | ^
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from testbst.cpp:19:
+/usr/include/assert.h:65:1: error: expected unqualified-id before string constant
+   65 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from testbst.cpp:21:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/sstream:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/sstream:879,
+                 from testbst.cpp:21:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/sstream.tcc:39:1: error: expected unqualified-id before ‘namespace’
+   39 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+testbst.cpp:23:7: error: expected nested-name-specifier before ‘namespace’
+   23 | using namespace std;
+      |       ^~~~~~~~~
+testbst.cpp:27:14: error: field ‘globalSS’ has incomplete type ‘std::stringstream’ {aka ‘std::__cxx11::basic_stringstream<char>’}
+   27 | stringstream globalSS;
+      |              ^~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/ios:38,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/ostream:38,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iostream:39,
+                 from bstmap.h:15,
+                 from testbst.cpp:19:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/iosfwd:108:11: note: declaration of ‘std::stringstream’ {aka ‘class std::__cxx11::basic_stringstream<char>’}
+  108 |     class basic_stringstream;
+      |           ^~~~~~~~~~~~~~~~~~
+testbst.cpp:172:1: error: expected ‘}’ at end of input
+  172 | }
+      | ^
+In file included from testbst.cpp:19:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/cassert:44,
+                 from testbst.cpp:20:
+testbst.cpp: In member function ‘void BSTMap::test01()’:
+testbst.cpp:40:3: error: ‘__assert_fail’ was not declared in this scope
+   40 |   assert(val == 0);
+      |   ^~~~~~
+testbst.cpp: In member function ‘void BSTMap::test02()’:
+testbst.cpp:73:13: error: invalid use of non-static member function ‘void BSTMap::printer(const value_type&)’
+   73 |   b.inorder(printer);
+      |             ^~~~~~~
+testbst.cpp:30:6: note: declared here
+   30 | void printer(const BSTMap::value_type &p) {
+      |      ^~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/cassert:44,
+                 from testbst.cpp:20:
+testbst.cpp:76:3: error: ‘__assert_fail’ was not declared in this scope
+   76 |   assert(order == "[b=3][e=4][f=5][x=10][z=50]");
+      |   ^~~~~~
+testbst.cpp:79:14: error: invalid use of non-static member function ‘void BSTMap::printer(const value_type&)’
+   79 |   b.preorder(printer);
+      |              ^~~~~~~
+testbst.cpp:30:6: note: declared here
+   30 | void printer(const BSTMap::value_type &p) {
+      |      ^~~~~~~
+testbst.cpp:85:15: error: invalid use of non-static member function ‘void BSTMap::printer(const value_type&)’
+   85 |   b.postorder(printer);
+      |               ^~~~~~~
+testbst.cpp:30:6: note: declared here
+   30 | void printer(const BSTMap::value_type &p) {
+      |      ^~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/cassert:44,
+                 from testbst.cpp:20:
+testbst.cpp: In member function ‘void BSTMap::test03()’:
+testbst.cpp:104:3: error: ‘__assert_fail’ was not declared in this scope
+  104 |   assert(b.height() == 6);
+      |   ^~~~~~
+testbst.cpp:110:5: error: ‘class BSTMap’ has no member named ‘clear’
+  110 |   b.clear();
+      |     ^~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/cassert:44,
+                 from testbst.cpp:20:
+testbst.cpp: In member function ‘void BSTMap::test04()’:
+testbst.cpp:138:3: error: ‘__assert_fail’ was not declared in this scope
+  138 |   assert(b.size() == 18);
+      |   ^~~~~~
+testbst.cpp: In member function ‘void BSTMap::test05()’:
+testbst.cpp:160:3: error: ‘__assert_fail’ was not declared in this scope
+  160 |   assert(b != d);
+      |   ^~~~~~
+testbst.cpp: At global scope:
+testbst.cpp:172:1: error: expected unqualified-id at end of input
+  172 | }
+      | ^
+=====================================================
+2. Runs and produces correct output
+=====================================================
+./create-output.sh: line 69: ./a.out: No such file or directory
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+16655 warnings and 6 errors generated.
+Error while processing /home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.cpp.
+29187 warnings and 26 errors generated.
+Error while processing /home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp.
+41734 warnings and 46 errors generated.
+Error while processing /home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp.
+54791 warnings and 51 errors generated.
+Error while processing /home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/main.cpp.
+67828 warnings and 66 errors generated.
+Error while processing /home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp.
+80542 warnings and 86 errors generated.
+Error while processing /home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp.
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.cpp:9:6: error: use of undeclared identifier 'Autocomplete'; did you mean 'BSTMap::Autocomplete'? [clang-diagnostic-error]
+void Autocomplete::readFile(const string &fileName) {
+     ^~~~~~~~~~~~~
+     BSTMap::Autocomplete
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:8:7: note: 'BSTMap::Autocomplete' declared here
+class Autocomplete {
+      ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.cpp:27:6: error: use of undeclared identifier 'Autocomplete'; did you mean 'BSTMap::Autocomplete'? [clang-diagnostic-error]
+bool Autocomplete::sortByWeight(BSTMap::value_type &a, BSTMap::value_type &b) {
+     ^~~~~~~~~~~~~
+     BSTMap::Autocomplete
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:8:7: note: 'BSTMap::Autocomplete' declared here
+class Autocomplete {
+      ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.cpp:32:1: error: use of undeclared identifier 'Autocomplete'; did you mean 'BSTMap::Autocomplete'? [clang-diagnostic-error]
+Autocomplete::complete(const BSTMap::key_type &prefix) const {
+^~~~~~~~~~~~~
+BSTMap::Autocomplete
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:8:7: note: 'BSTMap::Autocomplete' declared here
+class Autocomplete {
+      ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:6:1: error: 'using namespace' is not allowed in classes [clang-diagnostic-error]
+using namespace std;
+^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:16:10: error: field has incomplete type 'BSTMap' [clang-diagnostic-error]
+  BSTMap phrases;
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:7: note: definition of 'BSTMap' is not complete until the closing '}'
+class BSTMap {
+      ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:7: error: missing '}' at end of definition of 'BSTMap' [clang-diagnostic-error]
+class BSTMap {
+      ^
+/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/bits/stl_relops.h:67:1: note: still within definition of 'BSTMap' here
+namespace std _GLIBCXX_VISIBILITY(default)
+^
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:14:14: error: class member cannot be redeclared [clang-diagnostic-error]
+void BSTMap::copyHelper(Node *n, const Node *nOriginal) {
+             ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:148:8: note: previous declaration is here
+  void copyHelper(Node *n, const Node *nOriginal);
+       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:14:14: error: extra qualification on member 'copyHelper' [clang-diagnostic-error]
+void BSTMap::copyHelper(Node *n, const Node *nOriginal) {
+     ~~~~~~~~^~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:30:9: error: constructor cannot be redeclared [clang-diagnostic-error]
+BSTMap::BSTMap(const BSTMap &bst) {
+        ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:37:3: note: previous declaration is here
+  BSTMap(const BSTMap &bst);
+  ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:30:9: error: extra qualification on member 'BSTMap' [clang-diagnostic-error]
+BSTMap::BSTMap(const BSTMap &bst) {
+~~~~~~~~^~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:47:24: error: class member cannot be redeclared [clang-diagnostic-error]
+BSTMap::Node *&BSTMap::insert(value_type l, Node *n) {
+                       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:151:10: note: previous declaration is here
+  Node *&insert(value_type l , Node *n);
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:47:24: error: extra qualification on member 'insert' [clang-diagnostic-error]
+BSTMap::Node *&BSTMap::insert(value_type l, Node *n) {
+               ~~~~~~~~^~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:84:9: error: constructor cannot be redeclared [clang-diagnostic-error]
+BSTMap::BSTMap(const vector<value_type> &v) {
+        ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:42:12: note: previous declaration is here
+  explicit BSTMap(const vector<value_type> &v);
+           ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:84:9: error: extra qualification on member 'BSTMap' [clang-diagnostic-error]
+BSTMap::BSTMap(const vector<value_type> &v) {
+~~~~~~~~^~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:84:9: error: single-argument constructors must be marked explicit to avoid unintentional implicit conversions [hicpp-explicit-conversions,-warnings-as-errors]
+BSTMap::BSTMap(const vector<value_type> &v) {
+        ^~~~~~
+        explicit 
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:91:14: error: class member cannot be redeclared [clang-diagnostic-error]
+void BSTMap::insertVector(const vector<value_type> &v) {
+             ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:108:8: note: previous declaration is here
+  void insertVector(const vector<value_type> &v);
+       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:91:14: error: extra qualification on member 'insertVector' [clang-diagnostic-error]
+void BSTMap::insertVector(const vector<value_type> &v) {
+     ~~~~~~~~^~~~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:98:14: error: class member cannot be redeclared [clang-diagnostic-error]
+void BSTMap::deleteHelper(Node *n) {
+             ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:157:8: note: previous declaration is here
+  void deleteHelper(Node *n);
+       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:98:14: error: extra qualification on member 'deleteHelper' [clang-diagnostic-error]
+void BSTMap::deleteHelper(Node *n) {
+     ~~~~~~~~^~~~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:112:9: error: destructor cannot be redeclared [clang-diagnostic-error]
+BSTMap::~BSTMap() {
+        ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:45:11: note: previous declaration is here
+  virtual ~BSTMap();
+          ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:112:9: error: extra qualification on member '~BSTMap' [clang-diagnostic-error]
+BSTMap::~BSTMap() {
+~~~~~~~~^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:119:14: error: extra qualification on member 'clear' [clang-diagnostic-error]
+void BSTMap::clear() {
+     ~~~~~~~~^~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:127:14: error: class member cannot be redeclared [clang-diagnostic-error]
+bool BSTMap::empty() const { return this->root == nullptr; }
+             ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:57:8: note: previous declaration is here
+  bool empty() const;
+       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:127:14: error: extra qualification on member 'empty' [clang-diagnostic-error]
+bool BSTMap::empty() const { return this->root == nullptr; }
+     ~~~~~~~~^~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:130:13: error: extra qualification on member 'size' [clang-diagnostic-error]
+int BSTMap::size() const { return treeSize; }
+    ~~~~~~~~^~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:169:67: error: parameter 'v' is unused [misc-unused-parameters,-warnings-as-errors]
+                                              vector<value_type> &v) const {
+                                                                  ^~
+                                                                   /*v*/
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.cpp:268:50: error: parameter 'v' is unused [misc-unused-parameters,-warnings-as-errors]
+void BSTMap::rebalanceHelper(vector<value_type> &v, int low, int high) {
+                                                 ^~
+                                                  /*v*/
+/usr/include/assert.h:65:1: error: expected member name or ';' after declaration specifiers [clang-diagnostic-error]
+__BEGIN_DECLS
+^
+/usr/include/sys/cdefs.h:99:31: note: expanded from macro '__BEGIN_DECLS'
+# define __BEGIN_DECLS  extern "C" {
+                               ^
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:9:10: error: overloaded 'operator<<' must be a binary operator (has 3 parameters) [clang-diagnostic-error]
+ostream &operator<<(ostream &out, const BSTMap::Node &n) {
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:16:10: error: overloaded 'operator<<' must be a binary operator (has 3 parameters) [clang-diagnostic-error]
+ostream &operator<<(ostream &out, const BSTMap &bst) {
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:33:18: error: extra qualification on member 'printSideways' [clang-diagnostic-error]
+ostream &BSTMap::printSideways(ostream &out, const Node *curr, int level) {
+         ~~~~~~~~^~~~~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:33:18: error: static and non-static member functions with the same parameter types cannot be overloaded [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:130:19: note: previous declaration is here
+  static ostream &printSideways(ostream &out, const Node *curr, int level = 0);
+                  ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:40:10: error: use of undeclared identifier 'setfill' [clang-diagnostic-error]
+  out << setfill(space) << setw(level * readabilitySpaces) << space;
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:40:28: error: use of undeclared identifier 'setw'; did you mean 'getw'? [clang-diagnostic-error]
+  out << setfill(space) << setw(level * readabilitySpaces) << space;
+                           ^~~~~
+                           getw
+/usr/include/stdio.h:610:12: note: 'getw' declared here
+extern int getw (FILE *__stream);
+           ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:40:33: error: cannot initialize a parameter of type 'FILE *' (aka '_IO_FILE *') with an rvalue of type 'int' [clang-diagnostic-error]
+  out << setfill(space) << setw(level * readabilitySpaces) << space;
+                                ^
+/usr/include/stdio.h:610:24: note: passing argument to parameter '__stream' here
+extern int getw (FILE *__stream);
+                       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:47:18: error: extra qualification on member 'centeredPrint' [clang-diagnostic-error]
+ostream &BSTMap::centeredPrint(ostream &out, int space, const string &str,
+         ~~~~~~~~^~~~~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:47:18: error: static and non-static member functions with the same parameter types cannot be overloaded [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:133:19: note: previous declaration is here
+  static ostream &centeredPrint(ostream &out, int space, const string &str,
+                  ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:52:12: error: use of undeclared identifier 'setfill' [clang-diagnostic-error]
+    out << setfill(fillChar) << setw(extra + strL) << str;
+           ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:52:33: error: use of undeclared identifier 'setw'; did you mean 'getw'? [clang-diagnostic-error]
+    out << setfill(fillChar) << setw(extra + strL) << str;
+                                ^~~~~
+                                getw
+/usr/include/stdio.h:610:12: note: 'getw' declared here
+extern int getw (FILE *__stream);
+           ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:52:38: error: cannot initialize a parameter of type 'FILE *' (aka '_IO_FILE *') with an rvalue of type 'int' [clang-diagnostic-error]
+    out << setfill(fillChar) << setw(extra + strL) << str;
+                                     ^
+/usr/include/stdio.h:610:24: note: passing argument to parameter '__stream' here
+extern int getw (FILE *__stream);
+                       ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:53:12: error: use of undeclared identifier 'setfill' [clang-diagnostic-error]
+    out << setfill(fillChar) << setw(space - extra - strL) << fillChar;
+           ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:68:18: error: extra qualification on member 'printTreeLevel' [clang-diagnostic-error]
+ostream &BSTMap::printTreeLevel(ostream &out, queue<const Node *> &q, int width,
+         ~~~~~~~~^~~~~~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:68:18: error: static and non-static member functions with the same parameter types cannot be overloaded [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:137:19: note: previous declaration is here
+  static ostream &printTreeLevel(ostream &out, queue<const Node *> &q,
+                  ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:105:18: error: extra qualification on member 'printVertical' [clang-diagnostic-error]
+ostream &BSTMap::printVertical(ostream &out, Node *curr) {
+         ~~~~~~~~^~~~~~~~~~~~~
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:105:18: error: static and non-static member functions with the same parameter types cannot be overloaded [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:141:19: note: previous declaration is here
+  static ostream &printVertical(ostream &out, Node *curr);
+                  ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmapprinter.cpp:118:2: error: expected '}' [clang-diagnostic-error]
+}
+ ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:14: note: to match this '{'
+class BSTMap {
+             ^
+/usr/include/math.h:29:1: error: expected member name or ';' after declaration specifiers [clang-diagnostic-error]
+__BEGIN_DECLS
+^
+/usr/include/sys/cdefs.h:99:31: note: expanded from macro '__BEGIN_DECLS'
+# define __BEGIN_DECLS  extern "C" {
+                               ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:6:1: error: 'using namespace' is not allowed in classes [clang-diagnostic-error]
+using namespace std;
+^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:16:10: error: field has incomplete type 'BSTMap' [clang-diagnostic-error]
+  BSTMap phrases;
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:7: note: definition of 'BSTMap' is not complete until the closing '}'
+class BSTMap {
+      ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/main.cpp:19:5: error: uninitialized record type: 'ac' [cppcoreguidelines-pro-type-member-init,-warnings-as-errors]
+    Autocomplete ac;
+    ^              ~
+                   {}
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/main.cpp:31:2: error: expected ';' after class [clang-diagnostic-error]
+}
+ ^
+ ;
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/main.cpp:31:2: error: expected '}' [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:14: note: to match this '{'
+class BSTMap {
+             ^
+/usr/include/assert.h:65:1: error: expected member name or ';' after declaration specifiers [clang-diagnostic-error]
+__BEGIN_DECLS
+^
+/usr/include/sys/cdefs.h:99:31: note: expanded from macro '__BEGIN_DECLS'
+# define __BEGIN_DECLS  extern "C" {
+                               ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:6:1: error: 'using namespace' is not allowed in classes [clang-diagnostic-error]
+using namespace std;
+^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/autocomplete.h:16:10: error: field has incomplete type 'BSTMap' [clang-diagnostic-error]
+  BSTMap phrases;
+         ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:7: note: definition of 'BSTMap' is not complete until the closing '}'
+class BSTMap {
+      ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:12:3: error: uninitialized record type: 'ac' [hicpp-member-init,-warnings-as-errors]
+  Autocomplete ac;
+  ^              ~
+                 {}
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:15:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v.size() == 2);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:16:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[0].first == "help");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:17:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[0].second == 20);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:18:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[1].first == "hello");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:19:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[1].second == 10);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:26:3: error: uninitialized record type: 'ac' [hicpp-member-init,-warnings-as-errors]
+  Autocomplete ac;
+  ^              ~
+                 {}
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:29:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v.size() == 47);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:30:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[0].first == "Seattle, Washington, United States");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:31:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[0].second == 608660);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:32:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[46].first == "Seabeck, Washington, United States");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:33:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(v[46].second == 1105);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:42:2: error: expected ';' after class [clang-diagnostic-error]
+}
+ ^
+ ;
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testac.cpp:42:2: error: expected '}' [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:14: note: to match this '{'
+class BSTMap {
+             ^
+/usr/include/assert.h:65:1: error: expected member name or ';' after declaration specifiers [clang-diagnostic-error]
+__BEGIN_DECLS
+^
+/usr/include/sys/cdefs.h:99:31: note: expanded from macro '__BEGIN_DECLS'
+# define __BEGIN_DECLS  extern "C" {
+                               ^
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:27:14: error: implicit instantiation of undefined template 'std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >' [clang-diagnostic-error]
+stringstream globalSS;
+             ^
+/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/iosfwd:108:11: note: template is declared here
+    class basic_stringstream;
+          ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:40:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(val == 0);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:43:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(val == 5);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:47:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b1 != b2);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:50:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b1 == b2);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:56:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b1 == b3);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:73:13: error: reference to non-static member function must be called [clang-diagnostic-error]
+  b.inorder(printer);
+            ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:76:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(order == "[b=3][e=4][f=5][x=10][z=50]");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:79:14: error: reference to non-static member function must be called [clang-diagnostic-error]
+  b.preorder(printer);
+             ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:82:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(order == "[x=10][f=5][b=3][e=4][z=50]");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:85:15: error: reference to non-static member function must be called [clang-diagnostic-error]
+  b.postorder(printer);
+              ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:89:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(order == "[e=4][b=3][f=5][z=50][x=10]");
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:104:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b.height() == 6);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:108:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b.height() == 3);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:110:5: error: no member named 'clear' in 'BSTMap' [clang-diagnostic-error]
+  b.clear();
+    ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:111:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b.height() == 0);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:138:3: error: use of undeclared identifier '__assert_fail' [clang-diagnostic-error]
+  assert(b.size() == 18);
+  ^
+/usr/include/assert.h:89:6: note: expanded from macro 'assert'
+   : __assert_fail (__STRING(expr), __FILE__, __LINE__, __ASSERT_FUNCTION))
+     ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/testbst.cpp:172:2: error: expected '}' [clang-diagnostic-error]
+}
+ ^
+/home/NETID/dhimitri/2021wi343b-autocomplete-dhimitrimano/bstmap.h:22:14: note: to match this '{'
+class BSTMap {
+             ^
+/usr/include/assert.h:65:1: error: expected member name or ';' after declaration specifiers [clang-diagnostic-error]
+__BEGIN_DECLS
+^
+/usr/include/sys/cdefs.h:99:31: note: expanded from macro '__BEGIN_DECLS'
+# define __BEGIN_DECLS  extern "C" {
+                               ^
+Suppressed 80532 warnings (80532 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+6 warnings treated as errors
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+Running clang-format on ./autocomplete.cpp
+Running clang-format on ./bstmap.cpp
+67c67
+< if (l.first.at(i) < n->data.first.at(i) && n->left == nullptr) {
+---
+>   if (l.first.at(i) < n->data.first.at(i) && n->left == nullptr) {
+Running clang-format on ./bstmapprinter.cpp
+Running clang-format on ./main.cpp
+Running clang-format on ./testac.cpp
+Running clang-format on ./testbst.cpp
+=====================================================
+5. No memory leaks using g++
+=====================================================
+In file included from autocomplete.cpp:1:
+autocomplete.h:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.h:16:10: error: field ‘phrases’ has incomplete type ‘BSTMap’
+   16 |   BSTMap phrases;
+      |          ^~~~~~~
+In file included from autocomplete.h:4,
+                 from autocomplete.cpp:1:
+bstmap.h:22:7: note: forward declaration of ‘class BSTMap’
+   22 | class BSTMap {
+      |       ^~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/utility:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:60,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_relops.h:67:1: error: expected unqualified-id before ‘namespace’
+   67 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:60,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/utility:78:1: error: expected unqualified-id before ‘namespace’
+   78 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:60,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/algorithmfwd.h:42:1: error: expected unqualified-id before ‘namespace’
+   42 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:62,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_tempbuf.h:62:1: error: expected unqualified-id before ‘namespace’
+   62 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/uniform_int_dist.h:35,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:66,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/limits:158:1: error: expected unqualified-id before ‘namespace’
+  158 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:66,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/uniform_int_dist.h:37:1: error: expected unqualified-id before ‘namespace’
+   37 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/algorithm:62,
+                 from autocomplete.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_algo.h:71:1: error: expected unqualified-id before ‘namespace’
+   71 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:40,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/codecvt.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:40,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++io.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:44:1: error: expected unqualified-id before ‘namespace’
+   44 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:47:1: error: expected unqualified-id before ‘namespace’
+   47 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:1293,
+                 from autocomplete.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/fstream.tcc:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+autocomplete.cpp:5:7: error: expected nested-name-specifier before ‘namespace’
+    5 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.cpp:9:51: error: cannot define member function ‘BSTMap::Autocomplete::readFile’ within ‘BSTMap’
+    9 | void Autocomplete::readFile(const string &fileName) {
+      |                                                   ^
+autocomplete.cpp:27:77: error: cannot define member function ‘BSTMap::Autocomplete::sortByWeight’ within ‘BSTMap’
+   27 | bool Autocomplete::sortByWeight(BSTMap::value_type &a, BSTMap::value_type &b) {
+      |                                                                             ^
+autocomplete.cpp:32:56: error: cannot define member function ‘BSTMap::Autocomplete::complete’ within ‘BSTMap’
+   32 | Autocomplete::complete(const BSTMap::key_type &prefix) const {
+      |                                                        ^~~~~
+autocomplete.cpp:37:1: error: expected ‘}’ at end of input
+   37 | }
+      | ^
+In file included from autocomplete.h:4,
+                 from autocomplete.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+bstmap.h:160:18: error: expected unqualified-id at end of input
+  160 |   int treeSize = 0;
+      |                  ^
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from bstmap.cpp:8:
+/usr/include/assert.h:65:1: error: expected unqualified-id before string constant
+   65 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+bstmap.cpp:11:7: error: expected nested-name-specifier before ‘namespace’
+   11 | using namespace std;
+      |       ^~~~~~~~~
+bstmap.cpp:14:6: error: extra qualification ‘BSTMap::’ on member ‘copyHelper’ [-fpermissive]
+   14 | void BSTMap::copyHelper(Node *n, const Node *nOriginal) {
+      |      ^~~~~~
+bstmap.cpp:14:6: error: ‘void BSTMap::copyHelper(BSTMap::Node*, const Node*)’ cannot be overloaded with ‘void BSTMap::copyHelper(BSTMap::Node*, const Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:148:8: note: previous declaration ‘void BSTMap::copyHelper(BSTMap::Node*, const Node*)’
+  148 |   void copyHelper(Node *n, const Node *nOriginal);
+      |        ^~~~~~~~~~
+bstmap.cpp:30:1: error: extra qualification ‘BSTMap::’ on member ‘BSTMap’ [-fpermissive]
+   30 | BSTMap::BSTMap(const BSTMap &bst) {
+      | ^~~~~~
+bstmap.cpp:30:1: error: ‘BSTMap::BSTMap(const BSTMap&)’ cannot be overloaded with ‘BSTMap::BSTMap(const BSTMap&)’
+In file included from bstmap.cpp:8:
+bstmap.h:37:3: note: previous declaration ‘BSTMap::BSTMap(const BSTMap&)’
+   37 |   BSTMap(const BSTMap &bst);
+      |   ^~~~~~
+bstmap.cpp:47:16: error: extra qualification ‘BSTMap::’ on member ‘insert’ [-fpermissive]
+   47 | BSTMap::Node *&BSTMap::insert(value_type l, Node *n) {
+      |                ^~~~~~
+bstmap.cpp:47:16: error: ‘BSTMap::Node*& BSTMap::insert(BSTMap::value_type, BSTMap::Node*)’ cannot be overloaded with ‘BSTMap::Node*& BSTMap::insert(BSTMap::value_type, BSTMap::Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:151:10: note: previous declaration ‘BSTMap::Node*& BSTMap::insert(BSTMap::value_type, BSTMap::Node*)’
+  151 |   Node *&insert(value_type l , Node *n);
+      |          ^~~~~~
+bstmap.cpp:84:1: error: extra qualification ‘BSTMap::’ on member ‘BSTMap’ [-fpermissive]
+   84 | BSTMap::BSTMap(const vector<value_type> &v) {
+      | ^~~~~~
+bstmap.cpp:84:1: error: ‘BSTMap::BSTMap(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’ cannot be overloaded with ‘BSTMap::BSTMap(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+In file included from bstmap.cpp:8:
+bstmap.h:42:12: note: previous declaration ‘BSTMap::BSTMap(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+   42 |   explicit BSTMap(const vector<value_type> &v);
+      |            ^~~~~~
+bstmap.cpp:91:6: error: extra qualification ‘BSTMap::’ on member ‘insertVector’ [-fpermissive]
+   91 | void BSTMap::insertVector(const vector<value_type> &v) {
+      |      ^~~~~~
+bstmap.cpp:91:6: error: ‘void BSTMap::insertVector(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’ cannot be overloaded with ‘void BSTMap::insertVector(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+In file included from bstmap.cpp:8:
+bstmap.h:108:8: note: previous declaration ‘void BSTMap::insertVector(const std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&)’
+  108 |   void insertVector(const vector<value_type> &v);
+      |        ^~~~~~~~~~~~
+bstmap.cpp:98:6: error: extra qualification ‘BSTMap::’ on member ‘deleteHelper’ [-fpermissive]
+   98 | void BSTMap::deleteHelper(Node *n) {
+      |      ^~~~~~
+bstmap.cpp:98:6: error: ‘void BSTMap::deleteHelper(BSTMap::Node*)’ cannot be overloaded with ‘void BSTMap::deleteHelper(BSTMap::Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:157:8: note: previous declaration ‘void BSTMap::deleteHelper(BSTMap::Node*)’
+  157 |   void deleteHelper(Node *n);
+      |        ^~~~~~~~~~~~
+bstmap.cpp:112:1: error: extra qualification ‘BSTMap::’ on member ‘BSTMap’ [-fpermissive]
+  112 | BSTMap::~BSTMap() {
+      | ^~~~~~
+bstmap.cpp:112:1: error: ‘BSTMap::~BSTMap()’ cannot be overloaded with ‘virtual BSTMap::~BSTMap()’
+In file included from bstmap.cpp:8:
+bstmap.h:45:11: note: previous declaration ‘virtual BSTMap::~BSTMap()’
+   45 |   virtual ~BSTMap();
+      |           ^
+bstmap.cpp:119:6: error: extra qualification ‘BSTMap::’ on member ‘clear’ [-fpermissive]
+  119 | void BSTMap::clear() {
+      |      ^~~~~~
+bstmap.cpp:127:6: error: extra qualification ‘BSTMap::’ on member ‘empty’ [-fpermissive]
+  127 | bool BSTMap::empty() const { return this->root == nullptr; }
+      |      ^~~~~~
+bstmap.cpp:127:6: error: ‘bool BSTMap::empty() const’ cannot be overloaded with ‘bool BSTMap::empty() const’
+In file included from bstmap.cpp:8:
+bstmap.h:57:8: note: previous declaration ‘bool BSTMap::empty() const’
+   57 |   bool empty() const;
+      |        ^~~~~
+bstmap.cpp:130:5: error: extra qualification ‘BSTMap::’ on member ‘size’ [-fpermissive]
+  130 | int BSTMap::size() const { return treeSize; }
+      |     ^~~~~~
+bstmap.cpp:130:5: error: ‘int BSTMap::size() const’ cannot be overloaded with ‘int BSTMap::size() const’
+In file included from bstmap.cpp:8:
+bstmap.h:60:7: note: previous declaration ‘int BSTMap::size() const’
+   60 |   int size() const;
+      |       ^~~~
+bstmap.cpp:133:6: error: extra qualification ‘BSTMap::’ on member ‘finderHelper’ [-fpermissive]
+  133 | void BSTMap::finderHelper(Node *n, const key_type &k, Node *&ret) const {
+      |      ^~~~~~
+bstmap.cpp:133:6: error: ‘void BSTMap::finderHelper(BSTMap::Node*, const key_type&, BSTMap::Node*&) const’ cannot be overloaded with ‘void BSTMap::finderHelper(BSTMap::Node*, const key_type&, BSTMap::Node*&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:172:8: note: previous declaration ‘void BSTMap::finderHelper(BSTMap::Node*, const key_type&, BSTMap::Node*&) const’
+  172 |   void finderHelper(Node *n, const key_type &k, Node *&ret) const;
+      |        ^~~~~~~~~~~~
+bstmap.cpp:145:6: error: extra qualification ‘BSTMap::’ on member ‘contains’ [-fpermissive]
+  145 | bool BSTMap::contains(const key_type &key) const {
+      |      ^~~~~~
+bstmap.cpp:145:6: error: ‘bool BSTMap::contains(const key_type&) const’ cannot be overloaded with ‘bool BSTMap::contains(const key_type&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:70:8: note: previous declaration ‘bool BSTMap::contains(const key_type&) const’
+   70 |   bool contains(const key_type &key) const;
+      |        ^~~~~~~~
+bstmap.cpp:154:22: error: extra qualification ‘BSTMap::’ on member ‘operator[]’ [-fpermissive]
+  154 | BSTMap::mapped_type &BSTMap::operator[](const key_type &k) {
+      |                      ^~~~~~
+bstmap.cpp:154:22: error: ‘BSTMap::mapped_type& BSTMap::operator[](const key_type&)’ cannot be overloaded with ‘BSTMap::mapped_type& BSTMap::operator[](const key_type&)’
+In file included from bstmap.cpp:8:
+bstmap.h:79:16: note: previous declaration ‘BSTMap::mapped_type& BSTMap::operator[](const key_type&)’
+   79 |   mapped_type &operator[](const key_type &k);
+      |                ^~~~~~~~
+bstmap.cpp:168:29: error: extra qualification ‘BSTMap::’ on member ‘getHelper’ [-fpermissive]
+  168 | vector<BSTMap::value_type> &BSTMap::getHelper(Node *n, const key_type &k,
+      |                             ^~~~~~
+bstmap.cpp:168:29: error: ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >& BSTMap::getHelper(BSTMap::Node*, const key_type&, std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&) const’ cannot be overloaded with ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >& BSTMap::getHelper(BSTMap::Node*, const key_type&, std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:166:23: note: previous declaration ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >& BSTMap::getHelper(BSTMap::Node*, const key_type&, std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&) const’
+  166 |   vector<value_type> &getHelper(Node *n, const key_type &k, vector<value_type> &v) const;
+      |                       ^~~~~~~~~
+bstmap.cpp:182:28: error: extra qualification ‘BSTMap::’ on member ‘getAll’ [-fpermissive]
+  182 | vector<BSTMap::value_type> BSTMap::getAll(const key_type &k) const {
+      |                            ^~~~~~
+bstmap.cpp:182:28: error: ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> > BSTMap::getAll(const key_type&) const’ cannot be overloaded with ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> > BSTMap::getAll(const key_type&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:98:22: note: previous declaration ‘std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> > BSTMap::getAll(const key_type&) const’
+   98 |   vector<value_type> getAll(const key_type &k) const;
+      |                      ^~~~~~
+bstmap.cpp:189:6: error: extra qualification ‘BSTMap::’ on member ‘maxHeightHelper’ [-fpermissive]
+  189 | void BSTMap::maxHeightHelper(int &largest, int current, const Node *n) {
+      |      ^~~~~~
+bstmap.cpp:189:6: error: ‘void BSTMap::maxHeightHelper(int&, int, const Node*)’ cannot be overloaded with ‘static void BSTMap::maxHeightHelper(int&, int, const Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:169:15: note: previous declaration ‘static void BSTMap::maxHeightHelper(int&, int, const Node*)’
+  169 |   static void maxHeightHelper(int &largest, int current, const Node *n);
+      |               ^~~~~~~~~~~~~~~
+bstmap.cpp:201:5: error: extra qualification ‘BSTMap::’ on member ‘height’ [-fpermissive]
+  201 | int BSTMap::height() const {
+      |     ^~~~~~
+bstmap.cpp:201:5: error: ‘int BSTMap::height() const’ cannot be overloaded with ‘int BSTMap::height() const’
+In file included from bstmap.cpp:8:
+bstmap.h:64:7: note: previous declaration ‘int BSTMap::height() const’
+   64 |   int height() const;
+      |       ^~~~~~
+bstmap.cpp:209:5: error: extra qualification ‘BSTMap::’ on member ‘getHeight’ [-fpermissive]
+  209 | int BSTMap::getHeight(const Node *n) {
+      |     ^~~~~~
+bstmap.cpp:209:5: error: ‘int BSTMap::getHeight(const Node*)’ cannot be overloaded with ‘static int BSTMap::getHeight(const Node*)’
+In file included from bstmap.cpp:8:
+bstmap.h:145:14: note: previous declaration ‘static int BSTMap::getHeight(const Node*)’
+  145 |   static int getHeight(const Node *n);
+      |              ^~~~~~~~~
+bstmap.cpp:217:8: error: extra qualification ‘BSTMap::’ on member ‘count’ [-fpermissive]
+  217 | size_t BSTMap::count(const string &k) const {
+      |        ^~~~~~
+bstmap.cpp:217:8: error: ‘size_t BSTMap::count(const string&) const’ cannot be overloaded with ‘size_t BSTMap::count(const key_type&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:74:10: note: previous declaration ‘size_t BSTMap::count(const key_type&) const’
+   74 |   size_t count(const key_type &k) const;
+      |          ^~~~~
+bstmap.cpp:224:6: error: extra qualification ‘BSTMap::’ on member ‘inorderHelper’ [-fpermissive]
+  224 | void BSTMap::inorderHelper(void visit(const value_type &item), Node *n) const {
+      |      ^~~~~~
+bstmap.cpp:224:6: error: ‘void BSTMap::inorderHelper(void (*)(const value_type&), BSTMap::Node*) const’ cannot be overloaded with ‘void BSTMap::inorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:175:8: note: previous declaration ‘void BSTMap::inorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+  175 |   void inorderHelper(void visit(const value_type &item), Node *n) const;
+      |        ^~~~~~~~~~~~~
+bstmap.cpp:234:6: error: extra qualification ‘BSTMap::’ on member ‘inorder’ [-fpermissive]
+  234 | void BSTMap::inorder(void visit(const value_type &item)) const {
+      |      ^~~~~~
+bstmap.cpp:234:6: error: ‘void BSTMap::inorder(void (*)(const value_type&)) const’ cannot be overloaded with ‘void BSTMap::inorder(void (*)(const value_type&)) const’
+In file included from bstmap.cpp:8:
+bstmap.h:83:8: note: previous declaration ‘void BSTMap::inorder(void (*)(const value_type&)) const’
+   83 |   void inorder(void visit(const value_type &item)) const;
+      |        ^~~~~~~
+bstmap.cpp:238:6: error: extra qualification ‘BSTMap::’ on member ‘preorderHelper’ [-fpermissive]
+  238 | void BSTMap::preorderHelper(void visit(const value_type &item), Node *n) const {
+      |      ^~~~~~
+bstmap.cpp:238:6: error: ‘void BSTMap::preorderHelper(void (*)(const value_type&), BSTMap::Node*) const’ cannot be overloaded with ‘void BSTMap::preorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:178:8: note: previous declaration ‘void BSTMap::preorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+  178 |   void preorderHelper(void visit(const value_type &item), Node *n) const;
+      |        ^~~~~~~~~~~~~~
+bstmap.cpp:247:6: error: extra qualification ‘BSTMap::’ on member ‘preorder’ [-fpermissive]
+  247 | void BSTMap::preorder(void visit(const value_type &item)) const {
+      |      ^~~~~~
+bstmap.cpp:247:6: error: ‘void BSTMap::preorder(void (*)(const value_type&)) const’ cannot be overloaded with ‘void BSTMap::preorder(void (*)(const value_type&)) const’
+In file included from bstmap.cpp:8:
+bstmap.h:86:8: note: previous declaration ‘void BSTMap::preorder(void (*)(const value_type&)) const’
+   86 |   void preorder(void visit(const value_type &item)) const;
+      |        ^~~~~~~~
+bstmap.cpp:251:6: error: extra qualification ‘BSTMap::’ on member ‘postorderHelper’ [-fpermissive]
+  251 | void BSTMap::postorderHelper(void visit(const value_type &item),
+      |      ^~~~~~
+bstmap.cpp:251:6: error: ‘void BSTMap::postorderHelper(void (*)(const value_type&), BSTMap::Node*) const’ cannot be overloaded with ‘void BSTMap::postorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:181:8: note: previous declaration ‘void BSTMap::postorderHelper(void (*)(const value_type&), BSTMap::Node*) const’
+  181 |   void postorderHelper(void visit(const value_type &item), Node *n) const;
+      |        ^~~~~~~~~~~~~~~
+bstmap.cpp:261:6: error: extra qualification ‘BSTMap::’ on member ‘postorder’ [-fpermissive]
+  261 | void BSTMap::postorder(void visit(const value_type &item)) const {
+      |      ^~~~~~
+bstmap.cpp:261:6: error: ‘void BSTMap::postorder(void (*)(const value_type&)) const’ cannot be overloaded with ‘void BSTMap::postorder(void (*)(const value_type&)) const’
+In file included from bstmap.cpp:8:
+bstmap.h:89:8: note: previous declaration ‘void BSTMap::postorder(void (*)(const value_type&)) const’
+   89 |   void postorder(void visit(const value_type &item)) const;
+      |        ^~~~~~~~~
+bstmap.cpp:268:6: error: extra qualification ‘BSTMap::’ on member ‘rebalanceHelper’ [-fpermissive]
+  268 | void BSTMap::rebalanceHelper(vector<value_type> &v, int low, int high) {
+      |      ^~~~~~
+bstmap.cpp:268:6: error: ‘void BSTMap::rebalanceHelper(std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&, int, int)’ cannot be overloaded with ‘void BSTMap::rebalanceHelper(std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&, int, int)’
+In file included from bstmap.cpp:8:
+bstmap.h:154:8: note: previous declaration ‘void BSTMap::rebalanceHelper(std::vector<std::pair<std::__cxx11::basic_string<char>, long unsigned int> >&, int, int)’
+  154 |   void rebalanceHelper(vector<value_type> &v, int low, int high);
+      |        ^~~~~~~~~~~~~~~
+bstmap.cpp:280:6: error: extra qualification ‘BSTMap::’ on member ‘rebalance’ [-fpermissive]
+  280 | void BSTMap::rebalance() {
+      |      ^~~~~~
+bstmap.cpp:280:6: error: ‘void BSTMap::rebalance()’ cannot be overloaded with ‘void BSTMap::rebalance()’
+In file included from bstmap.cpp:8:
+bstmap.h:93:8: note: previous declaration ‘void BSTMap::rebalance()’
+   93 |   void rebalance();
+      |        ^~~~~~~~~
+bstmap.cpp:287:6: error: extra qualification ‘BSTMap::’ on member ‘isEqual’ [-fpermissive]
+  287 | bool BSTMap::isEqual(Node *thisN, Node *otherN) const {
+      |      ^~~~~~
+bstmap.cpp:287:6: error: ‘bool BSTMap::isEqual(BSTMap::Node*, BSTMap::Node*) const’ cannot be overloaded with ‘bool BSTMap::isEqual(BSTMap::Node*, BSTMap::Node*) const’
+In file included from bstmap.cpp:8:
+bstmap.h:163:8: note: previous declaration ‘bool BSTMap::isEqual(BSTMap::Node*, BSTMap::Node*) const’
+  163 |   bool isEqual(Node *thisN, Node *otherN) const;
+      |        ^~~~~~~
+bstmap.cpp:304:6: error: extra qualification ‘BSTMap::’ on member ‘operator==’ [-fpermissive]
+  304 | bool BSTMap::operator==(const BSTMap &other) const {
+      |      ^~~~~~
+bstmap.cpp:304:6: error: ‘bool BSTMap::operator==(const BSTMap&) const’ cannot be overloaded with ‘bool BSTMap::operator==(const BSTMap&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:102:8: note: previous declaration ‘bool BSTMap::operator==(const BSTMap&) const’
+  102 |   bool operator==(const BSTMap &other) const;
+      |        ^~~~~~~~
+bstmap.cpp:309:6: error: extra qualification ‘BSTMap::’ on member ‘operator!=’ [-fpermissive]
+  309 | bool BSTMap::operator!=(const BSTMap &other) const {
+      |      ^~~~~~
+bstmap.cpp:309:6: error: ‘bool BSTMap::operator!=(const BSTMap&) const’ cannot be overloaded with ‘bool BSTMap::operator!=(const BSTMap&) const’
+In file included from bstmap.cpp:8:
+bstmap.h:105:8: note: previous declaration ‘bool BSTMap::operator!=(const BSTMap&) const’
+  105 |   bool operator!=(const BSTMap &other) const;
+      |        ^~~~~~~~
+bstmap.cpp:311:1: error: expected ‘}’ at end of input
+  311 | }
+      | ^
+In file included from bstmap.cpp:8:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+bstmap.cpp:311:1: error: expected unqualified-id at end of input
+  311 | }
+      | ^
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from bstmapprinter.cpp:1:
+/usr/include/math.h:29:1: error: expected unqualified-id before string constant
+   29 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from bstmapprinter.cpp:2:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/cmath:77:8: error: expected unqualified-id before string constant
+   77 | extern "C++"
+      |        ^~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/ctime:58:1: error: expected unqualified-id before ‘namespace’
+   58 | namespace std
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:346,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/time_members.h:37:1: error: expected unqualified-id before ‘namespace’
+   37 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:348:1: error: expected unqualified-id before ‘namespace’
+  348 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from bstmapprinter.cpp:1:
+/usr/include/libintl.h:34:1: error: expected unqualified-id before string constant
+   34 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:2010,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/messages_members.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:2013,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/codecvt.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.h:2015,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_facets_nonio.tcc:35:1: error: expected unqualified-id before ‘namespace’
+   35 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/utility:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:36,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_relops.h:67:1: error: expected unqualified-id before ‘namespace’
+   67 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:36,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/utility:78:1: error: expected unqualified-id before ‘namespace’
+   78 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:37,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:342:1: error: expected unqualified-id before ‘namespace’
+  342 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:37,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/invoke.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:37,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/unique_ptr.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/locale:43,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:43,
+                 from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/locale_conv.h:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from bstmapprinter.cpp:3:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/iomanip:49:1: error: expected unqualified-id before ‘namespace’
+   49 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from bstmapprinter.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/sstream:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/sstream:879,
+                 from bstmapprinter.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/sstream.tcc:39:1: error: expected unqualified-id before ‘namespace’
+   39 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+bstmapprinter.cpp:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+bstmapprinter.cpp:9:10: error: ‘std::ostream& BSTMap::operator<<(std::ostream&, const BSTMap::Node&)’ must have exactly one argument
+    9 | ostream &operator<<(ostream &out, const BSTMap::Node &n) {
+      |          ^~~~~~~~
+bstmapprinter.cpp:16:10: error: ‘std::ostream& BSTMap::operator<<(std::ostream&, const BSTMap&)’ must have exactly one argument
+   16 | ostream &operator<<(ostream &out, const BSTMap &bst) {
+      |          ^~~~~~~~
+bstmapprinter.cpp:33:10: error: extra qualification ‘BSTMap::’ on member ‘printSideways’ [-fpermissive]
+   33 | ostream &BSTMap::printSideways(ostream &out, const Node *curr, int level) {
+      |          ^~~~~~
+bstmapprinter.cpp:33:10: error: ‘std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’ cannot be overloaded with ‘static std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:130:19: note: previous declaration ‘static std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’
+  130 |   static ostream &printSideways(ostream &out, const Node *curr, int level = 0);
+      |                   ^~~~~~~~~~~~~
+bstmapprinter.cpp:47:10: error: extra qualification ‘BSTMap::’ on member ‘centeredPrint’ [-fpermissive]
+   47 | ostream &BSTMap::centeredPrint(ostream &out, int space, const string &str,
+      |          ^~~~~~
+bstmapprinter.cpp:47:10: error: ‘std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’ cannot be overloaded with ‘static std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:133:19: note: previous declaration ‘static std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’
+  133 |   static ostream &centeredPrint(ostream &out, int space, const string &str,
+      |                   ^~~~~~~~~~~~~
+bstmapprinter.cpp:68:10: error: extra qualification ‘BSTMap::’ on member ‘printTreeLevel’ [-fpermissive]
+   68 | ostream &BSTMap::printTreeLevel(ostream &out, queue<const Node *> &q, int width,
+      |          ^~~~~~
+bstmapprinter.cpp:68:10: error: ‘std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’ cannot be overloaded with ‘static std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:137:19: note: previous declaration ‘static std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’
+  137 |   static ostream &printTreeLevel(ostream &out, queue<const Node *> &q,
+      |                   ^~~~~~~~~~~~~~
+bstmapprinter.cpp:105:10: error: extra qualification ‘BSTMap::’ on member ‘printVertical’ [-fpermissive]
+  105 | ostream &BSTMap::printVertical(ostream &out, Node *curr) {
+      |          ^~~~~~
+bstmapprinter.cpp:105:10: error: ‘std::ostream& BSTMap::printVertical(std::ostream&, BSTMap::Node*)’ cannot be overloaded with ‘static std::ostream& BSTMap::printVertical(std::ostream&, BSTMap::Node*)’
+In file included from bstmapprinter.cpp:1:
+bstmap.h:141:19: note: previous declaration ‘static std::ostream& BSTMap::printVertical(std::ostream&, BSTMap::Node*)’
+  141 |   static ostream &printVertical(ostream &out, Node *curr);
+      |                   ^~~~~~~~~~~~~
+bstmapprinter.cpp:118:1: error: expected ‘}’ at end of input
+  118 | }
+      | ^
+In file included from bstmapprinter.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+bstmapprinter.cpp: In member function ‘std::ostream& BSTMap::printSideways(std::ostream&, const Node*, int)’:
+bstmapprinter.cpp:40:10: error: ‘setfill’ was not declared in this scope
+   40 |   out << setfill(space) << setw(level * readabilitySpaces) << space;
+      |          ^~~~~~~
+bstmapprinter.cpp:40:28: error: ‘setw’ was not declared in this scope; did you mean ‘getw’?
+   40 |   out << setfill(space) << setw(level * readabilitySpaces) << space;
+      |                            ^~~~
+      |                            getw
+bstmapprinter.cpp: In member function ‘std::ostream& BSTMap::centeredPrint(std::ostream&, int, const string&, char)’:
+bstmapprinter.cpp:52:12: error: ‘setfill’ was not declared in this scope
+   52 |     out << setfill(fillChar) << setw(extra + strL) << str;
+      |            ^~~~~~~
+bstmapprinter.cpp:52:33: error: ‘setw’ was not declared in this scope; did you mean ‘getw’?
+   52 |     out << setfill(fillChar) << setw(extra + strL) << str;
+      |                                 ^~~~
+      |                                 getw
+bstmapprinter.cpp:55:12: error: ‘setfill’ was not declared in this scope
+   55 |     out << setfill(fillChar) << setw(space) << str;
+      |            ^~~~~~~
+bstmapprinter.cpp:55:33: error: ‘setw’ was not declared in this scope; did you mean ‘getw’?
+   55 |     out << setfill(fillChar) << setw(space) << str;
+      |                                 ^~~~
+      |                                 getw
+bstmapprinter.cpp: In member function ‘std::ostream& BSTMap::printTreeLevel(std::ostream&, std::queue<const BSTMap::Node*>&, int, int, int)’:
+bstmapprinter.cpp:73:31: error: ‘pow’ was not declared in this scope
+   73 |   int maxN = static_cast<int>(pow(2, depth - 1));
+      |                               ^~~
+bstmapprinter.cpp:83:20: error: aggregate ‘std::stringstream ss’ has incomplete type and cannot be defined
+   83 |       stringstream ss;
+      |                    ^~
+bstmapprinter.cpp: At global scope:
+bstmapprinter.cpp:118:1: error: expected unqualified-id at end of input
+  118 | }
+      | ^
+In file included from main.cpp:1:
+autocomplete.h:6:7: error: expected nested-name-specifier before ‘namespace’
+    6 | using namespace std;
+      |       ^~~~~~~~~
+autocomplete.h:16:10: error: field ‘phrases’ has incomplete type ‘BSTMap’
+   16 |   BSTMap phrases;
+      |          ^~~~~~~
+In file included from autocomplete.h:4,
+                 from main.cpp:1:
+bstmap.h:22:7: note: forward declaration of ‘class BSTMap’
+   22 | class BSTMap {
+      |       ^~~~~~
+In file included from /usr/include/features.h:375,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/cstdint:38,
+                 from bstmap.h:14,
+                 from autocomplete.h:4,
+                 from main.cpp:1:
+/usr/include/assert.h:65:1: error: expected unqualified-id before string constant
+   65 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:40,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/codecvt.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:40,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/c++io.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:42,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:44:1: error: expected unqualified-id before ‘namespace’
+   44 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:47:1: error: expected unqualified-id before ‘namespace’
+   47 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/fstream:1293,
+                 from main.cpp:4:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/fstream.tcc:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_tree.h:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:60,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/ext/aligned_buffer.h:40:1: error: expected unqualified-id before ‘namespace’
+   40 | namespace __gnu_cxx
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:60,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_tree.h:75:1: error: expected unqualified-id before ‘namespace’
+   75 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/utility:69,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:38,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_relops.h:67:1: error: expected unqualified-id before ‘namespace’
+   67 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:38,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/utility:78:1: error: expected unqualified-id before ‘namespace’
+   78 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:39,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/local/gcc-9.2.0/include/c++/9.2.0/array:342:1: error: expected unqualified-id before ‘namespace’
+  342 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:41,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/invoke.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:63,
+                 from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/tuple:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:61,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_map.h:66:1: error: expected unqualified-id before ‘namespace’
+   66 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+In file included from /usr/local/gcc-9.2.0/include/c++/9.2.0/map:62,
+                 from main.cpp:6:
+/usr/local/gcc-9.2.0/include/c++/9.2.0/bits/stl_multimap.h:64:1: error: expected unqualified-id before ‘namespace’
+   64 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+main.cpp:8:7: error: expected nested-name-specifier before ‘namespace’
+    8 | using namespace std;
+      |       ^~~~~~~~~
+main.cpp:31:1: error: expected ‘}’ at end of input
+   31 | }
+      | ^
+In file included from autocomplete.h:4,
+                 from main.cpp:1:
+bstmap.h:22:14: note: to match this ‘{’
+   22 | class BSTMap {
+      |              ^
+main.cpp:31:1: error: expected unqualified-id at end of input
+   31 | }
+      | ^
