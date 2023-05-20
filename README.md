@@ -1,8 +1,6 @@
 # Autocomplete
 
-Use a Binary Search Tree to store key-value pairs where the values represent the frequency of keys (cities, words, movie names, etc)
-
-Traverse the BST to find all entries that match the given prefix. Sort them by weight
+Uses a Binary Search Tree to store key-value pairs where the values represent the frequency of keys (cities, words, movie names, etc). Traverses the BST to find all entries that match the given prefix and sorts them by weight.
 
 ### cpp files
 
