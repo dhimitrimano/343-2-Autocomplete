@@ -20,4 +20,4 @@ Traverse the BST to find all entries that match the given prefix. Sort them by w
 
 Credits:<br>
 Shell scripts, text files, and starter code provided by Yusuf Pisan<br>
-Graph class implementation by Dhimitri Mano
+Binary Search Tree and Autocomplete class implementation by Dhimitri Mano
